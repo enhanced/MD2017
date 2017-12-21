@@ -27,6 +27,7 @@
 
 import requests
 
+# because there are some nasty encoded chars in this data, let's lose em
 def removeNonAscii(s): return "".join(i for i in s if ord(i)<128)
 
 def main():
